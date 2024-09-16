@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="mydiv"></h1>
+    <script>
+      let div1 = document.getElementById("mydiv");
+      div1.style.height = "550px";
+      div1.style.width = "400px";
+      div1.style.borderRadius = "100px";
+      div1.style.backgroundColor="rgb(248, 214, 158)"
+
+      let img = document.createElement("img");
+      img.setAttribute("src", "./assets/Lord.jpeg");
+      div1.appendChild(img);
+      img.setAttribute("height", "200");
+      img.style.margin = "100px 0px 0px 90px";
+      img.style.borderRadius = "50px";
+      div1.style.border = "5px solid";
+
+
+      let name = document.createElement("h6");
+      name.innerHTML =
+        " As we celebrate the birth of the Lord Ganesha, may your life be filled with wisdom, courage, and prosperity. Happy Ganesh Chaturthi.";
+      div1.appendChild(name);
+      name.style.color = "purple";
+      name.style.marginLeft="30px"
+      name.style.marginTop="80px"
+
+    </script>
+  </body>
+</html>
